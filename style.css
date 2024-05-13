@@ -1,0 +1,153 @@
+/* Temel stil sıfırlama */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* Kutu modelini kullan */
+}
+
+/* Sayfa arkaplanı ve yazı tipi ayarları */
+body {
+    background-color: black; /* Arka plan rengi */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Yazı tipi ailesi */
+}
+
+/* Form kontrol elemanları */
+.form-control {
+    display: flex; /* Elemanları yatay hizala */
+}
+
+/* Giriş kutusu stillemesi */
+.form-control input {
+    flex: 1; /* Alanı paylaş */
+    outline: 0; /* Kenar çizgilerini kaldır */
+    box-shadow: none; /* Kutu gölgesini kaldır */
+    border: 1px solid #B8860B; /* Kenar çizgisi rengi */
+}
+
+/* Buton stillemesi */
+.form-control button {
+    background-color: green; /* Arka plan rengi */
+    border: 0px; /* Kenar çizgisini kaldır */
+}
+
+/* Butonun üzerine gelindiğinde rengini değiştirme */
+.form-control button:hover {
+    background-color: red; /* Arka plan rengi */
+}
+
+/* Tarih ve saat bloğu stillemesi */
+.date-hour {
+    display: flex; /* Elemanları yatay hizala */
+    justify-content: space-around; /* Boşluk bırakarak hizala */
+    align-items: center; /* Dikeyde ortala */
+    padding: 1rem 1rem 1.5rem 1rem; /* Dolgular */
+    font-size: 20px; /* Yazı tipi boyutu */
+    font-weight: bold; /* Kalınlık */
+    background-color: white; /* Arka plan rengi */
+}
+
+/* Genel buton stillemesi */
+button {
+    background-color: darkorange; /* Arka plan rengi */
+    color: #102F5e; /* Metin rengi */
+    border: 2px solid #102F5e; /* Kenar çizgisi */
+    padding: 0.2rem 0.4rem; /* Dolgu */
+    font-size: 0.8rem; /* Yazı tipi boyutu */
+    cursor: pointer; /* İmleci el işareti yap */
+    justify-content: center; /* Elemanları yatayda ortala */
+    transition: .4s; /* Geçiş efekti süresi */
+    border: 1px solid #f5880e; /* Kenar çizgisi */
+}
+
+/* Butonun üzerine gelindiğinde rengini ve metin rengini değiştirme */
+button:hover {
+    background-color: orangered; /* Arka plan rengi */
+    color: white; /* Metin rengi */
+}
+
+/* Buton içindeki ikon stillemesi */
+button > i {
+    font-weight: bold; /* Kalınlık */
+    pointer-events: none; /* Tıklanabilirliği devre dışı bırak */
+}
+
+/* Giriş kutusu stillemesi */
+input {
+    padding: .4rem .5rem; /* Dolgular */
+}
+
+/* Gizlenmiş öğeler */
+.hide {
+    display:none; /* Görünmez yap */
+}
+
+/* Yapılacaklar listesi konteyneri stillemesi */
+.todo-container {
+    background-color: #ecf0f1; /* Arka plan rengi */
+    border-radius: 15px; /* Köşe yuvarlatma */
+    width: 450px; /* Genişlik */
+    margin: 3rem auto; /* Kenar boşlukları */
+    padding: 1.5rem; /* Dolgular */
+}
+
+/* Yapılacaklar listesi başlığı stillemesi */
+.todo-container header {
+    padding: 0 1rem 1rem; /* Dolgular */
+    border-bottom: 1px solid #ccc; /* Alt kenar çizgisi */
+}
+
+/* Başlık stillemesi */
+header > h1 {
+    padding-left: 16px; /* Sol dolgu */
+    border-left: 5px solid #e74c3c; /* Sol kenar çizgisi */
+}
+
+/* Form alanı ve düzenlemesi */
+#todo-form, #edit-form {
+    padding: 1rem; /* Dolgu */
+    border-bottom: 1px solid #ccc; /* Alt kenar çizgisi */
+    font-size: 16px; /* Yazı tipi boyutu */
+    font-weight: bold; /* Kalınlık */
+}
+
+/* Form alanları içindeki metin paragrafı düzenlemesi */
+#todo-form > p, #edit-form > p {
+    margin-bottom: .5rem; /* Alt boşluk */
+    font-weight: bold; /* Kalınlık */
+}
+
+/* Form kontrol elemanları içindeki giriş kutuları arasındaki boşluk */
+.form-control > input {
+    margin-right: .8rem; /* Sağ boşluk */
+}
+
+/* Düzenleme iptal butonu */
+#cancel-edit-btn {
+    margin-top: 1rem; /* Üst boşluk */
+}
+
+/* Yapılacaklar listesi öğesi stillemesi */
+.todo {
+    display: flex; /* Elemanları yatay hizala */
+    justify-content: space-around; /* Boşluk bırakarak hizala */
+    align-items: center; /* Dikeyde ortala */
+    padding: 0.3rem 0.2rem; /* Dolgular */
+    border-bottom: 1px solid #ddd; /* Alt kenar çizgisi */
+    transition: .3s; /* Geçiş efekti süresi */
+}
+
+/* Yapılacaklar listesi öğesi içindeki başlık stillemesi */
+.todo h3 {
+    flex: 1; /* Alanı paylaş */
+    font-size: 0.9rem; /* Yazı tipi boyutu */
+}
+
+/* Yapılacaklar listesi öğesi içindeki buton stillemesi */
+.todo button {
+    margin-left: .4rem; /* Sol boşluk */
+    border-radius: 50%; /* Daire köşe yuvarlatma */
+    width: 40px; /* Genişlik */
+    height: 40px; /* Yükseklik */
+    border: none; /* Kenar çizgisi */
+    background: #ecf0f1; /* Arka plan rengi */
+}

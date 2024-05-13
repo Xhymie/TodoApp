@@ -1,0 +1,116 @@
+/* Sayfa arkaplanı ve yazı tipi ayarları */
+body {
+    background-color: black; /* Arka plan rengi */
+    font-family: 'Times New Roman', Times, serif; /* Yazı tipi ailesi */
+}
+
+/* Dropdown oku gizleme */
+.dropdown-toggle::after {
+    display: none; /* Dropdown okunu gizle */
+}
+
+/* Üstbilgi stillemesi */
+header {
+    display: flex; /* Elemanları yatay hizala */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: space-between; /* Elemanlar arasında boşluk bırak */
+    width: 90%; /* Genişlik */
+    margin: 10px auto; /* Kenar boşlukları */
+    padding: 0 1rem 1rem; /* Dolgular */
+}
+
+/* Üstbilgi sağ tarafı (navigasyon) */
+header .right-side {
+    display: flex; /* Elemanları yatay hizala */
+}
+
+/* Navigasyon bağlantıları */
+header .right-side .nav-link-wrapper a {
+    padding: 15px; /* Dolgu */
+    margin: 15px; /* Kenar boşluğu */
+    text-decoration: none; /* Altçizgi kaldır */
+    color: rgb(255, 255, 255); /* Metin rengi */
+    font-size: x-large; /* Yazı tipi boyutu */
+    font-weight: bold; /* Kalınlık */
+}
+
+/* Ana konteynır stillemesi */
+.container {
+    width: 600px; /* Genişlik */
+    height: auto; /* Yükseklik otomatik */
+    margin: 15rem auto; /* Kenar boşlukları */
+    padding: 2.5rem; /* Dolgular */
+    border-radius: 15px; /* Köşe yuvarlatma */
+    justify-content: center; /* Elemanları yatayda ortala */
+}
+
+/* Tarih ve saat bloğu stillemesi */
+.date-hour {
+    display: flex; /* Elemanları yatay hizala */
+    justify-content: space-around; /* Boşluk bırakarak hizala */
+    align-items: center; /* Dikeyde ortala */
+    padding: 1rem 1rem 1.5rem 1rem; /* Dolgular */
+    font-size: 20px; /* Yazı tipi boyutu */
+    font-weight: bold; /* Kalınlık */
+    background-color: white; /* Arka plan rengi */
+    color: #d69b06; /* Metin rengi */
+}
+
+/* Tarih seçimi bloğu stillemesi */
+.datesp {
+    display: flex; /* Elemanları yatay hizala */
+    justify-content: space-around; /* Boşluk bırakarak hizala */
+    align-items: center; /* Dikeyde ortala */
+    padding: 1.5rem 1rem; /* Dolgular */
+    font-size: 20px; /* Yazı tipi boyutu */
+    font-weight: bold; /* Kalınlık */
+    background-color: white; /* Arka plan rengi */
+}
+
+/* Tarih seçimi ve saat seçimi bloğu alt kenar çizgisi */
+#datep {
+    border-bottom: solid 4px black; /* Alt kenar çizgisi */
+}
+
+#hourp {
+    border-bottom: solid 4px black; /* Alt kenar çizgisi */
+}
+
+/* Görevlerin stillemesi */
+.task {
+    display: flex; /* Elemanları yatay hizala */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: space-between; /* Boşluk bırakarak hizala */
+}
+
+/* Seçilmiş görevin stillemesi */
+.task label.checked {
+    text-decoration: line-through; /* Çizgi */
+}
+
+/* Kontrollerin stillemesi */
+.controls {
+    display: flex; /* Elemanları yatay hizala */
+    align-items: center; /* Dikeyde ortala */
+    justify-content: space-between; /* Boşluk bırakarak hizala */
+}
+
+/* Filtrelerin stillemesi */
+.filters span.active {
+    color: #3C87FF; /* Metin rengi */
+}
+
+.filters span {
+    margin-right: 10px; /* Sağ boşluk */
+    font-size: 15px; /* Yazı tipi boyutu */
+    column-rule-color: #444444; /* Sütun çizgisi rengi */
+    cursor: pointer; /* İmleci el işareti yap */
+}
+
+/* Kart başlığı stillemesi */
+.container .row .col-12 .card .card-header {
+    font-weight: bold; /* Kalınlık */
+    font-size: 30px; /* Yazı tipi boyutu */
+    border-left: 2px solid red; /* Sol kenar çizgisi */
+    margin-left: 20px; /* Sol kenar boşluğu */
+}
