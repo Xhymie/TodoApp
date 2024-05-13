@@ -1,11 +1,10 @@
-/* 230229080_AhmetÇağlar 230229088_TahaYasinÇiçek
 /* Renk dönüşümü animasyonu tanımı */
 @keyframes colorful {
   0% {
-    filter: hue-rotate(0deg); /* Renk dönüşümü: 0 derece */
+    filter: hue-rotate(0deg);
   }
   100% {
-    filter: hue-rotate(360deg); /* Renk dönüşümü: 360 derece */
+    filter: hue-rotate(360deg);
   }
 }
 
@@ -13,168 +12,199 @@
 *,
 *::before,
 *::after {
-  margin: 0; /* Kenar boşluğu sıfırlama */
-  padding: 0; /* Dolgu sıfırlama */
-  box-sizing: border-box; /* Kutu modelini kullan */
-  text-decoration: none; /* Altçizgi kaldırma */
-  list-style: none; /* Liste işaretlerini kaldırma */
-  outline: none; /* Kenar çizgisini kaldırma */
-  appearance: none; /* Görünümü kaldırma */
-  border-style: none; /* Kenar tarzını kaldırma */
-  color: #ffffff; /* Metin rengi */
-  -webkit-font-smoothing: antialiased; /* Webkit için font pürüzsüzleştirme */
-  -moz-osx-font-smoothing: grayscale; /* MacOS için font pürüzsüzleştirme */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  appearance: none;
+  border-style: none;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Başlık ve paragraf elementleri için yazı tipi tanımı */
 h1, h2, h3, span, p {
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; /* Yazı tipi ailesi */
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Sayfa genelinde kutu modeli tanımı */
 html,
 body {
-  width: 100%; /* Genişlik: %100 */
-  height: 100%; /* Yükseklik: %100 */
+  width: 100%;
+  height: 100%;
 }
 
 /* Sayfa genelinde stil tanımları */
 body {
-  position: relative; /* Pozisyon: göreli */
-  overflow: hidden; /* Taşmayı gizle */
-  display: flex; /* Elemanları yatay hizala */
-  justify-content: center; /* Elemanları yatayda ortala */
-  align-items: center; /* Dikeyde ortala */
-  flex-direction: column; /* Elemanları dikey hizala */
-  padding: 2em; /* Dolgular */
-  background-color: #000000; /* Arka plan rengi: siyah */
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  background-color: #000000;
 }
 
 /* Dikey kaydırma çubuğu stillemesi */
 body::-webkit-scrollbar {
-  background: white; /* Arka plan rengi: beyaz */
-  width: 10px; /* Genişlik */
+  background: white;
+  width: 10px;
 }
 body::-webkit-scrollbar-track {
-  background: white; /* Arka plan rengi: beyaz */
+  background: white;
 }
 body::-webkit-scrollbar-thumb {
-  background: white; /* Arka plan rengi: beyaz */
-  border-radius: 1px; /* Kenar yarıçapı */
+  background: white;
+  border-radius: 1px;
 }
 
 /* Ana konteynır stillemesi */
 body .container {
-  position: relative; /* Pozisyon: göreli */
-  z-index: 1; /* Z-indeksi */
-  background-color: rgb(0, 0, 0); /* Arka plan rengi: siyah */
-  display: flex; /* Elemanları yatay hizala */
-  justify-content: center; /* Elemanları yatayda ortala */
-  align-items: center; /* Dikeyde ortala */
-  flex-direction: row; /* Elemanları yatay hizala */
-  flex-wrap: wrap; /* Elemanları sarma */
-  padding: 1em; /* Dolgular */
+  position: relative;
+  z-index: 1;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1em;
 }
 
 /* Kart stillemesi */
 .card {
-  position: relative; /* Pozisyon: göreli */
-  width: 300px; /* Genişlik */
-  height: 400px; /* Yükseklik */
-  margin: 1em; /* Kenar boşluğu */
-  background-color: white; /* Arka plan rengi: beyaz */
-  background: rgba(0, 0, 0, 0.05); /* Arka plan rengi */
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Kutu gölgesi */
-  border-radius: 15px; /* Kenar yarıçapı */
-  display: flex; /* Elemanları yatay hizala */
-  justify-content: center; /* Elemanları yatayda ortala */
-  align-items: center; /* Dikeyde ortala */
-  flex-direction: column; /* Elemanları dikey hizala */
-  backdrop-filter: blur(40px); /* Arkaplanı bulanıklaştır */
-  border: solid 2px transparent; /* Kenar rengi */
-  background-clip: padding-box; /* Arka plan rengi */
-  box-shadow: 0px 10px 10px rgba(214, 0, 0, 0.03); /* Kutu gölgesi */
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 1em;
+  background-color: white;
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(40px);
+  border: solid 2px transparent;
+  background-clip: padding-box;
+  box-shadow: 0px 10px 10px rgba(214, 0, 0, 0.03);
 }
 
 /* Kart içeriği stillemesi */
 .container .card .content {
-  position: relative; /* Pozisyon: göreli */
-  display: flex; /* Elemanları yatay hizala */
-  justify-content: center; /* Elemanları yatayda ortala */
-  align-items: center; /* Dikeyde ortala */
-  flex-direction: column; /* Elemanları dikey hizala */
-  opacity: 0.5; /* Opaklık */
-  transition: 0.5s; /* Geçiş efekti süresi */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 /* Kart içeriği resim stillemesi */
 .container .card .content .img {
-  position: relative; /* Pozisyon: göreli */
-  width: 150px; /* Genişlik */
-  height: 150px; /* Yükseklik */
-  border-radius: 50%; /* Kenar yarıçapı */
-  overflow: hidden; /* Taşmaları gizle */
-  border: 10px solid rgba(0, 0, 0, 0.25); /* Kenar rengi */
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 10px solid rgba(0, 0, 0, 0.25);
 }
 
 /* Kart içeriği resim etiketi stillemesi */
 .container .card .content .img img {
-  position: absolute; /* Pozisyon: mutlak */
-  top: 0; /* Üst kenar */
-  left: 0; /* Sol kenar */
-  width: 100%; /* Genişlik: %100 */
-  height: 100%; /* Yükseklik: %100 */
-  object-fit: cover; /* Nesne uyumu */
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Kart içeriği başlık stillemesi */
 body .container .card .content .cardContent h3 {
-  color: white; /* Metin rengi: beyaz */
-  text-transform: uppercase; /* Metin dönüşümü: büyük harfe çevir */
-  letter-spacing: 2px; /* Harf aralığı */
-  font-weight: 500; /* Yazı tipi kalınlığı */
-  font-size: 18px; /* Yazı tipi boyutu */
-  text-align: center; /* Metin hizalama */
-  margin: 20px 0 10px; /* Kenar boşluğu */
-  line-height: 1.1em; /* Satır yüksekliği */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 10px;
+  line-height: 1.1em;
 }
 
 /* Kart içeriği başlık alt başlık stillemesi */
 body .container .card .content .cardContent h3 span {
-  font-size: 12px; /* Yazı tipi boyutu */
-  font-weight: 300; /* Yazı tipi kalınlığı */
-  text-transform: initial; /* Metin dönüşümü: ilk hali */
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
 }
 
 /* Kart üzerine gelindiğinde içeriğin stillemesi */
 body .container .card:hover .content {
-  opacity: 1; /* Opaklık */
-  transform: translateY(-20px); /* Yatayda hareket */
+  opacity: 1;
+  transform: translateY(-20px);
 }
 
 /* Üstbilgi stillemesi */
-header{
-  display: flex; /* Elemanları yatay hizala */
-  align-items: center; /* Dikeyde ortala */
-  justify-content: space-between; /* Boşluk bırakarak hizala */
-  width: 90%; /* Genişlik */
-  margin: 10px auto; /* Kenar boşlukları */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
 }
 
 /* Üstbilgi sol tarafı (logo) stillemesi */
-header .left-side a img{
-  width: 80px; /* Genişlik */
+header .left-side a img {
+  width: 80px;
 }
 
 /* Üstbilgi sağ tarafı (navigasyon) stillemesi */
-header .right-side{
-  display: flex; /* Elemanları yatay hizala */
+header .right-side {
+  display: flex;
 }
 
 /* Navigasyon bağlantıları stillemesi */
-header .right-side .nav-link-wrapper a{
-  padding: 10px; /* Dolgu */
-  margin: 10px; /* Kenar boşluğu */
-  text-decoration: none; /* Altçizgi kaldır */
-  color: rgb(255, 255, 255); /* Metin rengi */
+header .right-side .nav-link-wrapper a {
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .container, .card {
+    width: 100%; /* Tüm kartların ve konteynırın ekran genişliğine uyum sağlaması */
+    padding: 10px;
+  }
+
+  header, .card .content, body .container .card {
+    flex-direction: column; /* Yatay yerine dikey hizalama */
+  }
+
+  header .right-side .nav-link-wrapper a {
+    font-size: smaller; /* Daha küçük font boyutu */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column; /* Navigasyon öğelerini dikey hizalama */
+  }
+
+  .card {
+    width: 90%; /* Kart genişliğini azaltma */
+  }
+
+  .container .card .content .img {
+    width: 120px; /* Resim boyutunu küçültme */
+    height: 120px;
+  }
 }
